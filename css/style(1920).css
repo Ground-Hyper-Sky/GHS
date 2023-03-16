@@ -1,0 +1,421 @@
+* {
+  cursor: default;
+  margin: 0rem;
+  padding: 0rem;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+html {
+  font-size: 2rem;
+  background-image: url(../images/背景.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+@media all and (min-width: 981px) {
+  .all {
+    width: 85%;
+    max-width: 1450px;
+    margin: 0 auto;
+  }
+  /* 导航栏 */
+  .nav {
+    position: fixed;
+    display: inline-block;
+    width: 100%;
+    height: 1.8rem;
+    z-index: 1000;
+    left: 0%;
+    right: 0%;
+  }
+  .nav_box {
+    width: 90%;
+    max-width: 1450px;
+    margin: 0 auto;
+  }
+  /* GROUND官方网站 */
+  .nav_zhu {
+    float: left;
+    width: 11.45833333rem;
+    height: 1.00416667rem;
+    margin-top: 1.10416667rem;
+    margin-left: 0.875rem;
+  }
+  .nav_zhu .nav_DROUND {
+    display: inline-block;
+    height: 0.60416667rem;
+    color: white;
+    font-size: 0.36666667rem;
+    font-family: 'Microsoft Yahei';
+    line-height: 0.60416667rem;
+    border-bottom: 0.02083333rem solid #FFFFFF;
+    margin-left: 0.3125rem;
+    vertical-align: top;
+  }
+  .nav_zhu .nav_guan {
+    color: white;
+    font-size: 0.46666667rem;
+    font-family: 'Microsoft Yahei';
+    vertical-align: top;
+  }
+  /* 右边选择栏 */
+  .nav_bar {
+    float: right;
+    font-size: 0.46666667rem;
+    font-family: 'Microsoft Yahei';
+    color: #FFFFFF;
+    margin-top: 1.10416667rem;
+    align-items: center;
+    margin-right: 0.83333333rem;
+  }
+  .nav_bar a {
+    display: inline-block;
+    height: 0.875rem;
+    margin-right: 0.20833333rem;
+    margin-left: 0.20833333rem;
+  }
+  .la_la {
+    display: none;
+    margin-top: 0.27083333rem;
+  }
+  .la_la::before {
+    content: ' ';
+    float: left;
+    width: 0rem;
+    height: 0rem;
+    border-width: 0.20833333rem 0.20833333rem 0.20833333rem 0.20833333rem;
+    border-style: solid;
+    border-color: transparent transparent rgba(8, 3, 37, 0.4) transparent;
+    margin-top: -0.41666667rem;
+    margin-left: 0.10416667rem;
+  }
+  .nav_bar li {
+    float: right;
+    width: 2.5rem;
+    background-color: rgba(8, 3, 37, 0.4);
+    text-align: center;
+  }
+  .nav_bar li span {
+    display: block;
+    font-weight: 400;
+    font-size: 0.3125rem;
+    font-family: 'Microsoft Yahei';
+  }
+  .nav_bar #pull_downbox {
+    float: right;
+    font-size: 0.5625rem;
+    font-family: 'Microsoft Yahei';
+    color: #FFFFFF;
+    font-weight: 550;
+    width: 1.20833333rem;
+    margin: 0 auto;
+    margin-left: 0.20833333rem;
+    margin-right: 0.20833333rem;
+  }
+  #pull_downbox:hover .la_la {
+    display: block;
+  }
+  #pull_downbox ul > li:hover {
+    background-color: rgba(225, 225, 225, 0.3);
+  }
+  .nav_bar a:hover {
+    border-bottom: 0.04166667rem solid #fff;
+  }
+  #pull_downbox span:hover {
+    border-bottom: 0.04166667rem solid #fff;
+  }
+  /* 语言切换下拉框动画 */
+  .la:hover .la_la {
+    display: inline-block;
+  }
+  /* --------------------------------------------------------------------------------------------------------------- */
+  /* 服务器主页展示名字 */
+  .page_theme {
+    display: inline-block;
+    width: 16.666666rem;
+    height: 4.375rem;
+    color: #FFFFFF;
+    margin-top: 4.375rem;
+    margin-left: 2.08333333rem;
+    border-bottom: 0.083333rem solid #FFFFFF;
+  }
+  .page_theme .page_name {
+    display: block;
+    font-size: 1.104166rem;
+    font-family: 'Microsoft Yahei';
+    margin-top: 18;
+    margin-left: 0.20833333rem;
+  }
+  .page_theme .page_server {
+    float: right;
+    display: block;
+    font-size: 1.20833333rem;
+    font-family: 'Microsoft Yahei';
+    margin-top: 0.625rem;
+    margin-right: 1.45833333rem;
+  }
+  .page_theme .page_speak {
+    float: left;
+    display: inline-block;
+    color: #FFFFFF;
+    font-size: 0.375rem;
+    font-family: 'Microsoft Yahei';
+    margin-top: 0.9375rem;
+    margin-left: 1.125rem;
+  }
+  /* ----------------------------------------------------- */
+  /* 主页展示加入我们选择框 */
+  .join {
+    width: 7.35416667rem;
+    height: 2.0625rem;
+    margin: 4.16666667rem 0px 300px 10.02083333rem;
+    border: 0.08333333rem solid white;
+    transform: skew(-25deg);
+  }
+  .join .join_jia {
+    display: block;
+    float: left;
+    width: 7.35416667rem;
+    height: 2.0625rem;
+    color: #FFFFFF;
+    font-size: 0.64583333rem;
+    font-family: 'Microsoft Yahei';
+    font-weight: 700;
+    border: transparent;
+    transform: skew(25deg);
+    background-color: transparent;
+    transition: color 0.3s;
+  }
+  .join .join_jia:hover {
+    color: #96a2b5;
+    border-color: ;
+  }
+  /* ----------------------------------------------------- */
+  /* 上下灰色边框,蓝色内容框设置(成员，机器，建筑)*/
+  /* 上灰色框 */
+  .show_box {
+    width: 100%;
+    height: 17.64583333rem;
+    background-color: #383a3f;
+    margin-top: 1.25rem;
+    box-shadow: -5px -5px 20px #565656 inset, 5px 5px 50px #565656 inset;
+    border-radius: 6px;
+  }
+  .gong_head {
+    display: inline-block;
+    width: 100%;
+    height: 2.70833333rem;
+  }
+  .gong_head span {
+    display: inline-block;
+    color: #FFFFFF;
+    font-size: 1.125rem;
+    font-family: 'Microsoft Yahei';
+    margin-top: 0.625rem;
+    margin-left: 1.77083333rem;
+  }
+  /* 中间蓝色背景设置 */
+  .gong_body {
+    background-color: #2f237c;
+    width: 100%;
+    height: 14.3125rem;
+  }
+  /* 下面灰色框设置 */
+  .gong_tail {
+    height: 0.625rem;
+    background-color: #383a3f;
+  }
+  /* ----------------------------------------------------- */
+  /* 成员展示 */
+  .chengyuan_zhan {
+    display: inline-block;
+    color: #FFFFFF;
+    font-size: 1.125rem;
+    font-family: 'Microsoft Yahei';
+    margin-top: 0.625rem;
+    margin-left: 1.77083333rem;
+  }
+  /* 中间皮肤框滚动父盒子设置 */
+  .cheng_bao {
+    position: relative;
+    width: 100%;
+    height: 15.3125rem;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+  }
+  /* 中间皮肤框滚动设置 */
+  .cheng_gundong {
+    display: flex;
+    height: 13.36666667rem;
+    margin-top: -20px;
+  }
+  .cheng_gundong li {
+    display: flex;
+    justify-content: center;
+    width: 7.66666667rem;
+    height: 13.36666667rem;
+    margin-left: 3.125rem;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 0.66666667rem;
+    text-align: center;
+    flex-direction: column;
+  }
+  .cheng_gundong li img {
+    width: 60%;
+    height: 80%;
+    margin: auto;
+  }
+  .cheng_gundong li p {
+    display: inline-block;
+    height: 60px;
+    line-height: 48px;
+  }
+  /* ----------------------------------------------------- */
+  /* 机器,建筑展示设置 */
+  .zhan_body {
+    overflow: hidden;
+    position: relative;
+  }
+  .zhan_body .zhan_gundong {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: -14.041rem;
+  }
+  .zhan_body .zhan_gundong li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 18.75rem;
+    height: 15.3125rem;
+    transform: skew(-15deg);
+    overflow: hidden;
+  }
+  .zhan_body .zhan_gundong li img {
+    width: 130%;
+    height: 100%;
+    transform: skew(15deg);
+  }
+  /* ----------------------------------------------------- */
+  /* 关于我们 */
+  .guanyu_blue {
+    width: 100%;
+    height: 20.66666667rem;
+    color: #FFFFFF;
+    margin-top: 2.22916667rem;
+    background-color: #2f237c;
+    background-image: url(../images/logo.png);
+    background-repeat: no-repeat;
+    background-position: 95% 90%;
+    background-size: 14rem 14rem;
+  }
+  /* 左上角关于我们文字背景 */
+  .yellow {
+    float: left;
+    width: 6.33333333rem;
+    height: 1.5rem;
+    font-size: 0.89583333rem;
+    font-family: 'Microsoft Yahei';
+    color: #ffffff;
+    text-indent: 0.72916667rem;
+    line-height: 1.5rem;
+    background-color: #d8c973;
+    border-radius: 0.75rem;
+    margin: 1.47916667rem 0rem 0rem 1.27083333rem;
+  }
+  /* Ground Hyper Sky设置 */
+  .guanyu_bigzi {
+    float: left;
+    display: block;
+    width: 26%;
+    margin-left: -3.8125rem;
+    margin-top: 3.95833333rem;
+  }
+  .guanyu_bigzi .guanyu_G {
+    font-size: 1.625rem;
+    font-family: 'Microsoft Yahei';
+  }
+  .guanyu_bigzi .guanyu_name {
+    font-size: 0.95833333rem;
+    font-family: 'Microsoft Yahei';
+  }
+  /* 介绍服务器正文设置 */
+  .guanyu_zi {
+    float: left;
+    display: inline-block;
+    width: 78%;
+    font-size: 0.83333333rem;
+    font-family: 'Microsoft Yahei';
+    letter-spacing: 0.0625rem;
+    text-indent: 2.25em;
+    line-height: 1.5625rem;
+    margin: 2.70833333rem 0rem 0rem 4.375rem;
+  }
+  .guanyu_tail {
+    width: 100%;
+    height: 1.77083333rem;
+    background-color: #383a3f;
+  }
+  /* ----------------------------------------------------- */
+  /* 联系我们 */
+  .lianxi {
+    width: 100%;
+    height: 19.79166667rem;
+  }
+  .lianxi .lianxi_shou {
+    position: relative;
+    left: 50%;
+    margin-top: 4.29166667rem;
+    margin-left: -2.70833333rem;
+    display: block;
+    width: 5.41666667rem;
+    height: 1.33333333rem;
+    font-size: 1.35416667rem;
+    font-family: 'Microsoft Yahei';
+    color: #FFFFFF;
+    font-weight: 550;
+  }
+  /* 哔哩哔哩,QQ框 */
+  .bigbox {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 4.27083333rem;
+    margin-top: 4.79166667rem;
+    color: #FFFFFF;
+  }
+  .lianxi_zhan {
+    margin: 0px 6.66666667rem 0px 6.66666667rem;
+    width: 3.53333333rem;
+    height: 3.53333333rem;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.5);
+    text-align: center;
+  }
+  /* 插入哔哩哔哩,QQ图片 */
+  .lianxi_bilibili {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/bilibili.png);
+    background-repeat: no-repeat;
+    background-size: 85%;
+    background-position: center;
+  }
+  .lianxi_QQ {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/qq.png);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-position: center;
+  }
+}
