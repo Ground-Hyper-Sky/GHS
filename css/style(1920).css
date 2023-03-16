@@ -251,12 +251,13 @@ html {
   }
   /* 中间皮肤框滚动设置 */
   .cheng_gundong {
+    position: absolute;
     display: flex;
     height: 13.36666667rem;
     margin-top: -20px;
+    right: -1px;
   }
   .cheng_gundong li {
-    display: flex;
     justify-content: center;
     width: 7.66666667rem;
     height: 13.36666667rem;
