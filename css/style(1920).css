@@ -255,9 +255,10 @@ html {
     display: flex;
     height: 13.36666667rem;
     margin-top: -20px;
-    right: -1px;
+    left: -30px;
   }
   .cheng_gundong li {
+    display: flex;
     justify-content: center;
     width: 7.66666667rem;
     height: 13.36666667rem;
@@ -269,9 +270,9 @@ html {
     flex-direction: column;
   }
   .cheng_gundong li img {
-    width: 60%;
-    height: 80%;
-    margin: auto;
+    width: 120%;
+    height: 100%;
+    margin: 0 auto;
   }
   .cheng_gundong li p {
     display: inline-block;
