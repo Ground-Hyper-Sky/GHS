@@ -221,9 +221,11 @@ html {
   }
   /* 中间蓝色背景设置 */
   .gong_body {
+    position: relative;
     background-color: #2f237c;
     width: 100%;
     height: 14.3125rem;
+    overflow: hidden;
   }
   /* 下面灰色框设置 */
   .gong_tail {
@@ -244,7 +246,7 @@ html {
   .cheng_bao {
     position: relative;
     width: 100%;
-    height: 15.3125rem;
+    height: 14.3125rem;
     overflow: hidden;
     display: flex;
     align-items: center;
@@ -254,15 +256,15 @@ html {
     position: absolute;
     display: flex;
     height: 13.36666667rem;
-    margin-top: -20px;
     left: -30px;
+    top: 0px;
   }
   .cheng_gundong li {
     display: flex;
     justify-content: center;
-    width: 7.66666667rem;
+    width: 9.2rem;
     height: 13.36666667rem;
-    margin-left: 3.125rem;
+    margin-left: 1.39166667rem;
     color: #FFFFFF;
     font-weight: 700;
     font-size: 0.66666667rem;
@@ -270,28 +272,24 @@ html {
     flex-direction: column;
   }
   .cheng_gundong li img {
-    width: 120%;
-    height: 100%;
+    width: 90%;
+    height: 90%;
     margin: 0 auto;
   }
   .cheng_gundong li p {
     display: inline-block;
     height: 60px;
-    line-height: 48px;
+    line-height: 35px;
   }
   /* ----------------------------------------------------- */
   /* 机器,建筑展示设置 */
-  .zhan_body {
-    overflow: hidden;
-    position: relative;
-  }
-  .zhan_body .zhan_gundong {
+  .zhan_gundong {
     display: flex;
     align-items: center;
     position: absolute;
-    left: -14.041rem;
+    left: -210px;
   }
-  .zhan_body .zhan_gundong li {
+  .zhan_gundong li {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -300,10 +298,18 @@ html {
     transform: skew(-15deg);
     overflow: hidden;
   }
-  .zhan_body .zhan_gundong li img {
+  .zhan_gundong li img {
     width: 130%;
     height: 100%;
     transform: skew(15deg);
+  }
+  .ZhanShi_Cover,
+  .JiQi_Cover,
+  .Cheng_Cover {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 500;
   }
   /* ----------------------------------------------------- */
   /* 关于我们 */
