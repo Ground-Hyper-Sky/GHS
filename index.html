@@ -5,13 +5,14 @@
 	<meta name="viewport" content="width=device-width, name="viewport" content="user-scalable=no width=device-width initial-scale=1.0 maximum -scale =1.0 vice-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link rel="stylesheet" type="text/css" href="css/style(1920).css"/>
+	<link rel="stylesheet" type="text/css" href="css/style(480).css"/>
 <!-- 	<script type="text/javascript">
 		if ((navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i))) {
 				window.location.href = "H5/index.html"; //手机端网址
 		        }
 	</script> -->
 	<title>(⊙﹏⊙)</title>
-</head>，
+</head>
 <body>
 	<!-- 主页返回位置 -->
 	<a name="1"></a>
@@ -25,7 +26,7 @@
 						<span class="nav_guan">官方网站</span>
 					</a>
 				</div>
-				<!-- <div class="nav_small"></div>
+				<div class="nav_small"></div>
 				<!-- 右边选择栏 -->
 				<div class="nav_bar">
 					<a href="#2" class="qwqw"> 关于我们</a> / 
@@ -35,7 +36,7 @@
 					
 					<!-- 语言切换 -->
 					<div id="pull_downbox">
-						<span class="la"></span>
+						<span class="la"></span>
 						<ul class="la_la">
 							<li class="china">中 文<span>china</span></li>
 							<li class="click"><div>英 语</div><span>english</span></li>
@@ -183,5 +184,19 @@
 		})
 	})
 </script>
-<script src="js/index.js" type="text/javascript" charset="utf-8"></script>	
+<script type="text/javascript">
+	$(function(){
+		//判断屏幕宽度
+		var winWide = window.screen.width;  //获取当前屏幕分辨率
+		alert("winWide");
+		var wideScreen = false;
+		if(winWide <= 981){  //1024及以下分辨率
+			// <script src="js/sq.js" type="text/javascript" charset="utf-8"></script>
+			<script scr="js/sq.js" type ="text/javascript" charset="utf-8"></script>
+		}else{  //大于1024的分辨率
+			<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+		}
+	})
+</script>
+<!-- <script src="js/index.js" type="text/javascript" charset="utf-8"></script>	 -->
 </html>

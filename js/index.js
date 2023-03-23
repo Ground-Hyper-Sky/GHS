@@ -1,5 +1,5 @@
 	// 鼠标拖动展示封装
-	
+	console.log(111)
 	// 传入参数  拖动图上面防止误触的覆盖盒子  拖动图的ul盒子  最大截至地方
 	function Scroll_Wrap(gai, scr, maxstopleft) {
 		// 执行函数后获取盒子的最初left并保存切不可更改，作为数据使用
