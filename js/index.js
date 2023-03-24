@@ -1,5 +1,7 @@
 	// 鼠标拖动展示封装
-	console.log(111)
+	setInterval(function(){
+		console.log(111)
+	},1000)
 	// 传入参数  拖动图上面防止误触的覆盖盒子  拖动图的ul盒子  最大截至地方
 	function Scroll_Wrap(gai, scr, maxstopleft) {
 		// 执行函数后获取盒子的最初left并保存切不可更改，作为数据使用
@@ -76,3 +78,16 @@
 		};
 	}
 	But_popup()
+		$(function() {
+			$(window).scroll(function() {
+				if($(document).scrollTop() >= 80) {
+					$(".nav").css("background-color","rgba(0,0,0, .5)");
+					$(".nav_zhu").css("margin-top","0.5rem")
+					$(".nav_bar").css("margin-top","0.5rem")
+				} else {
+					$(".nav").css("background-color","rgba(0,0,0,0)");
+					$(".nav_zhu").css("margin-top","1.10416667rem")
+					$(".nav_bar").css("margin-top","1.10416667rem")
+				}
+			})
+		})

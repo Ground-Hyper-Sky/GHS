@@ -169,34 +169,12 @@
 </style>
 <!-- 滑动页面切换导航栏 -->
 <script src="js/min.js"></script>
-<script type="text/javascript">
-	$(function() {
-		$(window).scroll(function() {
-			if($(document).scrollTop() >= 80) {
-				$(".nav").css("background-color","rgba(0,0,0, .5)");
-				$(".nav_zhu").css("margin-top","0.5rem")
-				$(".nav_bar").css("margin-top","0.5rem")
-			} else {
-				$(".nav").css("background-color","rgba(0,0,0,0)");
-				$(".nav_zhu").css("margin-top","1.10416667rem")
-				$(".nav_bar").css("margin-top","1.10416667rem")
-			}
-		})
-	})
-</script>
-<script type="text/javascript">
-	$(function(){
-		//判断屏幕宽度
-		var winWide = window.screen.width;  //获取当前屏幕分辨率
-		alert("winWide");
-		var wideScreen = false;
-		if(winWide <= 981){  //1024及以下分辨率
-			// <script src="js/sq.js" type="text/javascript" charset="utf-8"></script>
-			<script scr="js/sq.js" type ="text/javascript" charset="utf-8"></script>
-		}else{  //大于1024的分辨率
-			<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
-		}
-	})
-</script>
+<!-- <script type="text/javascript">
+	if (screen.width<981){
+		console.log(screen.width)
+	    document.write('<script type="text/javascript" src="sq.js"><\/script>');
+	}else{
+	    document.write('<script type="text/javascript" src="index.js"><\/script>');}
+</script> -->
 <!-- <script src="js/index.js" type="text/javascript" charset="utf-8"></script>	 -->
 </html>
