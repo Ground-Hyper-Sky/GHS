@@ -86,7 +86,7 @@ html {
   }
   .page_theme .page_name {
     display: block;
-    font-size: 1.33333333rem;
+    font-size: 1.2rem;
     font-family: 'Microsoft Yahei';
     margin-top: 18;
     margin-left: 0.20833333rem;
@@ -97,7 +97,7 @@ html {
     font-size: 1.20833333rem;
     font-family: 'Microsoft Yahei';
     margin-top: 0.625rem;
-    margin-right: 1.45833333rem;
+    margin-right: 5%;
   }
   .page_theme .page_speak {
     float: left;
@@ -111,19 +111,19 @@ html {
   /* ----------------------------------------------------- */
   /* 主页展示加入我们选择框 */
   .join {
-    width: 7.35416667rem;
-    height: 2.0625rem;
-    margin: 4.16666667rem 0px 300px 10.02083333rem;
+    width: 5rem;
+    height: 1.66666667rem;
+    margin: 3.33333333rem 0px 0px 4rem;
     border: 0.08333333rem solid white;
     transform: skew(-25deg);
   }
   .join .join_jia {
     display: block;
     float: left;
-    width: 7.35416667rem;
-    height: 2.0625rem;
+    width: 5rem;
+    height: 1.66666667rem;
     color: #FFFFFF;
-    font-size: 0.64583333rem;
+    font-size: 0.53333333rem;
     font-family: 'Microsoft Yahei';
     font-weight: 700;
     border: transparent;
@@ -131,8 +131,7 @@ html {
     background-color: transparent;
     transition: color 0.3s;
   }
-  .join .join_jia:hover {
-    color: #96a2b5;
-    border-color: ;
+  .join_jia:hover .join {
+    background-color: rgba(255, 255, 255, 0.1);
   }
 }
