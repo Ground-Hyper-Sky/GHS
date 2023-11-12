@@ -39,7 +39,6 @@ html {
   }
   /* GROUND官方网站 */
   .nav_zhu {
-    display: inline-block;
     float: left;
     width: 50%;
     height: 45px;
@@ -89,7 +88,7 @@ html {
     font-size: 1.2rem;
     font-family: 'Microsoft Yahei';
     margin-top: 18;
-    margin-left: 0.20833333rem;
+    margin-left: 6.6px;
   }
   .page_theme .page_server {
     float: right;
@@ -101,7 +100,6 @@ html {
   }
   .page_theme .page_speak {
     float: left;
-    display: inline-block;
     width: 100%;
     color: #FFFFFF;
     font-size: 0.375rem;
