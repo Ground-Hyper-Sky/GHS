@@ -6,12 +6,7 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link rel="stylesheet" type="text/css" href="../css/style(1920).css"/>
 	<link rel="stylesheet" type="text/css" href="../css/style(480).css"/>
-	<link rel="stylesheet" type="text/css" href="../css/common(1920).css"/>
-<!-- 	<script type="text/javascript">
-		if ((navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i))) {
-				window.location.href = "H5/index.html"; //手机端网址
-		        }
-	</script> -->
+	<link rel="stylesheet" type="text/css" href="../css/common.css"/>
 	<title>(⊙﹏⊙)</title>
 </head>
 <body>
@@ -30,19 +25,19 @@
 				<div class="nav_small"></div>
 				<!-- 右边选择栏 -->
 				<div class="nav_bar">
-					<a href="#2" class="qwqw"> About us</a> / 
-					<a href="https://live.bilibili.com/22261628?broadcast_type=0&is_room_feed=1&spm_id_from=333.999.0.0"> Live broadcast room</a> / 
-					<a href="#4"> Machines•show</a> / 
+					<a href="#2" class="qwqw"> About us</a><span class="apart"> / </span>
+					<a href="https://live.bilibili.com/22261628" target="_blank"> Live broadcast room</a><span class="apart"> / </span>
+					<a href="#4"> Machines•show</a><span class="apart"> / </span>
 					<a href="#5" class="forum"> Buildings•show </a>
 					
 					<!-- 语言切换 -->
 					<div id="pull_downbox">
 						<span class="la"></span>
 						<ul class="la_la">
-							<li class="chinese">Chinese<span>chinese</span></li>
-							<li>English<span>english</span></li>
+							<li class="chinese">中 文<span>chinese</span></li>
 						</ul>
 					</div>
+					<div id="Return">返回 </div>
 				</div>
 			</div>
 		</div>
@@ -57,13 +52,15 @@
 			<span class="page_speak">We are committed to creating a gathering of red stone, architecture, and survival merged in one large scale red stone Survival circuit server</span>
 		</span>
 		<div class="join">
-			<input type="button" class="join_jia" style="font-size: 0.7rem;" value="Join us →">
+			<a href="#6">
+				<input type="button" class="join_jia" style="font-size: 0.7rem;" value="Join us →">
+			</a>
 		</div>
 		<div id="Dynamic_Arrow"><img src="../images/dynamic_arrow.png" alt=""></div>
-		<!-- 服务器成员展示 --> 
+		<!-- 服务器职位展示 --> 
 		<div class="show_box">
 			<div class="gong_head">
-				<span class="chengyuan_zhan" style="font-size: 0.8rem;">Server dministrator</span>
+				<span class="chengyuan_zhan" style="font-size: 0.8rem;">Server Administrator</span>
 			</div>
 			<div class="cheng_body gong_body">
 				<div class="cheng_bao">
@@ -73,12 +70,21 @@
 						<li><img src="../images/FRUITS_CANDY.png"><p>FRUITS_CANDY</p><p>Server owner</p></li>
 						<li><img src="../images/Nonamepls_.png"><p>Nonamepls_</p><p>Server administrator</p></li>
 						<li><img src="../images/mc_doge_.png"><p>mc_doge_</p><p>Server administrator</p></li>
+						<li><img src="../images/Bingkeler.png"><p>Bingkeler</p><p>Server administrator</p></li>
 						<li><img src="../images/Adorable_Killa.png"><p>Adorable_Killa</p><p>Server maintainer</p></li> 
 						<li><img src="../images/offer_letter.png"><p>offer_letter</p><p>Website builder</p></li>
 						<li><img src="../images/hello_gh0st.png"><p>hello_gh0st</p><p>Group owner</p></li>
 						<li><img src="../images/FRUITS_CANDY.png"><p>FRUITS_CANDY</p><p>Server owner</p></li>
 						<li><img src="../images/Nonamepls_.png"><p>Nonamepls_</p><p>Server administrator</p></li>
 						<li><img src="../images/mc_doge_.png"><p>mc_doge_</p><p>Server administrator</p></li>
+						<li><img src="../images/Bingkeler.png"><p>Bingkeler</p><p>Server administrator</p></li>
+						<li><img src="../images/Adorable_Killa.png"><p>Adorable_Killa</p><p>Server maintainer</p></li>
+						<li><img src="../images/offer_letter.png"><p>offer_letter</p><p>Website builder</p></li>
+						<li><img src="../images/hello_gh0st.png"><p>hello_gh0st</p><p>Group owner</p></li>
+						<li><img src="../images/FRUITS_CANDY.png"><p>FRUITS_CANDY</p><p>Server owner</p></li>
+						<li><img src="../images/Nonamepls_.png"><p>Nonamepls_</p><p>Server administrator</p></li>
+						<li><img src="../images/mc_doge_.png"><p>mc_doge_</p><p>Server administrator</p></li>
+						<li><img src="../images/Bingkeler.png"><p>Bingkeler</p><p>Server administrator</p></li>
 						<li><img src="../images/Adorable_Killa.png"><p>Adorable_Killa</p><p>Server maintainer</p></li>
 						<li><img src="../images/offer_letter.png"><p>offer_letter</p><p>Website builder</p></li>
 					</ul>
@@ -87,6 +93,7 @@
 		</div>
 		<!-- 机器展示 -->
 		<div class="show_box">
+			<a name="4"></a>
 			<div class="gong_head">
 				<span style="font-size: 0.8rem;">Server machine show</span>
 			</div>
@@ -102,11 +109,15 @@
 					<li><img src="../images/Y0史莱姆农场.png" alt="Y0史莱姆农场"></li>
 					<li><img src="../images/天基炮.png" alt="天基炮"></li>
 					<li><img src="../images/主世界猪人塔.png" alt="主世界猪人塔"></li>
+					<li><img src="../images/全物品.jpg" alt="全物品"></li>
+					<li><img src="../images/Y0史莱姆农场.png" alt="Y0史莱姆农场"></li>
+					<li><img src="../images/天基炮.png" alt="天基炮"></li>
 				</ul>
 			</div>
 		</div>
 		<!-- 建筑展示 -->
 		<div class="show_box">
+			<a name="5"></a>
 			<div class="gong_head">
 				<span style="font-size: 0.8rem;">Server buildings show</span>
 			</div>
@@ -122,32 +133,37 @@
 					<li><img src="../images/地狱小厅.png" alt="地狱小厅"></li>
 					<li><img src="../images/末地大厅.png" alt="末地大厅"></li>
 					<li><img src="../images/天空之城.png" alt="天空之城"></li>
+					<li><img src="../images/地狱大厅.png" alt="地狱大厅"></li>
+					<li><img src="../images/地狱小厅.png" alt="地狱小厅"></li>
+					<li><img src="../images/末地大厅.png" alt="末地大厅"></li>
 				</ul>
 			</div>
 		</div>
 		<!-- 关于我们 -->
 		<div class="guanyu_blue">
 			<a name="2"></a>
-			<div class="yellow" style="font-size: 0.8rem;">About us→</div>
+			<div class="yellow" style="font-size: 0.7rem;">About us→</div>
 			<span class="wen">
 				<div class="guanyu_bigzi">
 					<span class="guanyu_G">G</span>
 					<span class=" guanyu_name">roud  Hyper  Sky</span>
 				</div>
-				<span class="guanyu_zi" style="margin-top: 1.5rem;">We are created  a rallying red stone, architecture, and survival merged in one large scale red stone Survival circuit server in February 2021 ,there are a number of large redstone machines on the server,and we have independent innovation capabilities,We are also striving to create a harmonious, fraternal, and conflict-free Redstone survival circuit server.</span>
+				<span class="guanyu_zi" style="margin-top: 0.5rem; line-height: 0.9rem;
+				">Holle,This is GHS server: Ground Hyper Sky , We are created  a rallying red stone, architecture, and survival merged in one large scale red stone Survival circuit server in February 2021 ,there are a number of large redstone machines on the server,and we have independent innovation capabilities,We are also striving to create a harmonious, fraternal, and conflict-free Redstone survival circuit server.</span>
 			</span>
 		</div>
 		<div class="guanyu_tail"></div>	 
 		<!-- 联系我们 -->
 		<div class="lianxi">
-			<span class="lianxi_shou" style="font-size: 0.9rem;">Contact us</span>
+			<span class="lianxi_shou" style="font-size: 0.7rem;">Contact us</span>
+			<a name="6"></a>
 			<div class="bigbox">
-				<div class="lianxi_zhan">
-					<span class="lianxi_bilibili"></span>
+				<div class="lianxi_zhan" id="lianxi_bilibili">
+					<a class="bilibili" href="https://space.bilibili.com/476767350" target="_blank"></a>
 					<p>BiliBili</p>
 				</div>
-				<div class="lianxi_zhan">
-					<span class="lianxi_QQ"></span>
+				<div class="lianxi_zhan" id="lianxi_QQ">
+					<a class="QQ" href="http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=OyIGJCU0DAg81bZ6z3L4NJIsoZfMdFGT&authKey=jQiqwg%2FvS57m0GJwej776PLd5UdTVGEQP420xXVT3SLqsPUES353Co3bmO2or1gd&noverify=0&group_code=283504428" target="_blank"></a>
 					<p>QQ</p>
 				</div>
 			</div>
@@ -156,16 +172,16 @@
 </body>
 <style type="text/css">
  /* 字体图标声明 */
-	@font-face {
-	font-family: 'icomoon';
-	src:  url('../fonts/icomoon.eot?h1stor');
-	src:  url('../fonts/icomoon.eot?h1stor#iefix') format('embedded-opentype'),
-		url('../fonts/icomoon.ttf?h1stor') format('truetype'),
-		url('../fonts/icomoon.woff?h1stor') format('woff'),
-		url('../fonts/icomoon.svg?h1stor#icomoon') format('svg');
-	font-weight: normal;
-	font-style: normal;
-	font-display: block;
+ 	@font-face {
+	  font-family: 'icomoon';
+	  src:  url('../fonts/icomoon.eot?blr0o7');
+	  src:  url('../fonts/icomoon.eot?blr0o7#iefix') format('embedded-opentype'),
+	    url('../fonts/icomoon.ttf?blr0o7') format('truetype'),
+	    url('../fonts/icomoon.woff?blr0o7') format('woff'),
+	    url('../fonts/icomoon.svg?blr0o7#icomoon') format('svg');
+	  font-weight: normal;
+	  font-style: normal;
+	  font-display: block;
 	}
 	.la {
 		font-family: 'icomoon';
@@ -173,25 +189,18 @@
 	#gua {
 		font-family: 'icomoon';
 	}
+	#Return{
+		font-family: 'icomoon';
+	}
 </style>
-<!-- 滑动页面切换导航栏 -->
-
-<!-- <script type="text/javascript">
-	if (screen.width<981){
-		console.log(screen.width)
-	    document.write('<script type="text/javascript" src="sq.js"><\/script>');
-	}else{
-	    document.write('<script type="text/javascript" src="index.js"><\/script>');}
-</script> -->
 <script type="text/javascript">
 	// 中英文切换
 	function language_zh_cn() {
 		let Chinese_Switshove = document.querySelector('.chinese');
 		Chinese_Switshove.addEventListener('click',function() {
 		window.location.replace('../index.html');
-	})
-	}
-	language_zh_cn()
+	})};
+	language_zh_cn();
 </script>
 <script src="../js/min.js"></script>
 <script src="../js/index.js" type="text/javascript" charset="utf-8"></script>	

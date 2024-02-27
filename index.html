@@ -6,12 +6,7 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link rel="stylesheet" type="text/css" href="css/style(1920).css"/>
 	<link rel="stylesheet" type="text/css" href="css/style(480).css"/>
-	<link rel="stylesheet" type="text/css" href="css/common(1920).css"/>
-	<!-- <script type="text/javascript">
-		if ((navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i))) {
-				window.location.href = "pages\H5\index.html"; //手机端网址
-		        }
-	</script> -->
+	<link rel="stylesheet" type="text/css" href="css/common.css"/>
 	<title>(⊙﹏⊙)</title>
 </head>
 <body>
@@ -30,19 +25,19 @@
 				<div class="nav_small"></div>
 				<!-- 右边选择栏 -->
 				<div class="nav_bar">
-					<a href="#2"> 关于我们</a> / 
-					<a href="https://live.bilibili.com/22261628?broadcast_type=0&is_room_feed=1&spm_id_from=333.999.0.0"> 直播间</a> / 
-					<a href="#4"> 机器•展示</a> / 
+					<a href="#2"> 关于我们</a><span class="apart"> / </span>
+					<a href="https://live.bilibili.com/22261628" target="_blank"> 直播间</a><span class="apart"> / </span>
+					<a href="#4"> 机器•展示</a><span class="apart"> / </span>
 					<a href="#5"> 建筑•展示 </a>
 					
 					<!-- 语言切换 -->
 					<div id="pull_downbox">
 						<span class="la"></span>
 						<ul class="la_la">
-							<li>中 文<span>china</span></li>
-							<li class="english">英 语<span>english</span></li>
+							<li class="english">English<span>english</span></li>
 						</ul>
 					</div>
+					<div id="Return">返回 </div>
 				</div>
 			</div>
 		</div>
@@ -55,7 +50,9 @@
 			<span class="page_speak">我们致力于创建一个集红石，建筑，生存，于一体的无纷争的大型生电红石服务器</span>
 		</span>
 		<div class="join">
-			<input type="button" class="join_jia" value="加入我们 →">
+			<a href="#6">
+				<input type="button" class="join_jia" value="加入我们 →">
+			</a>
 		</div>
 		<div id="Dynamic_Arrow"><img src="images/dynamic_arrow.png" alt=""></div>
 		</div>
@@ -70,14 +67,23 @@
 					<ul class="cheng_gundong">
 						<li><img src="images/hello_gh0st.png"><p>hello_gh0st</p><p>群主</p></li>
 						<li><img src="images/FRUITS_CANDY.png"><p>FRUITS_CANDY</p><p>服主</p></li>
-						<li><img src="images/Nonemepls_.png"><p>Nonemepls_</p><p>管理员</p></li>
+						<li><img src="images/Nonamepls_.png"><p>Nonemepls_</p><p>管理员</p></li>
 						<li><img src="images/mc_doge_.png"><p>mc_doge_</p><p>管理员</p></li>
+						<li><img src="images/Bingkeler.png"><p>Bingkeler</p><p>管理员</p></li>
 						<li><img src="images/Adorable_Killa.png"><p>Adorable_Killa</p><p>服务器维护</p></li>
 						<li><img src="images/offer_letter.png"><p>offer_letter</p><p>网站建设</p></li>
 						<li><img src="images/hello_gh0st.png"><p>hello_gh0st</p><p>群主</p></li>
 						<li><img src="images/FRUITS_CANDY.png"><p>FRUITS_CANDY</p><p>服主</p></li>
-						<li><img src="images/Nonemepls_.png"><p>Nonemepls_</p><p>管理员</p></li>
+						<li><img src="images/Nonamepls_.png"><p>Nonemepls_</p><p>管理员</p></li>
 						<li><img src="images/mc_doge_.png"><p>mc_doge_</p><p>管理员</p></li>
+						<li><img src="images/Bingkeler.png"><p>Bingkeler</p><p>管理员</p></li>
+						<li><img src="images/Adorable_Killa.png"><p>Adorable_Killa</p><p>服务器维护</p></li>
+						<li><img src="images/offer_letter.png"><p>offer_letter</p><p>网站建设</p></li>
+						<li><img src="images/hello_gh0st.png"><p>hello_gh0st</p><p>群主</p></li>
+						<li><img src="images/FRUITS_CANDY.png"><p>FRUITS_CANDY</p><p>服主</p></li>
+						<li><img src="images/Nonamepls_.png"><p>Nonemepls_</p><p>管理员</p></li>
+						<li><img src="images/mc_doge_.png"><p>mc_doge_</p><p>管理员</p></li>
+						<li><img src="images/Bingkeler.png"><p>Bingkeler</p><p>管理员</p></li>
 						<li><img src="images/Adorable_Killa.png"><p>Adorable_Killa</p><p>服务器维护</p></li>
 						<li><img src="images/offer_letter.png"><p>offer_letter</p><p>网站建设</p></li>
 					</ul>	
@@ -86,6 +92,7 @@
 		</div>
 		<!-- 机器展示 -->
 		<div class="show_box">
+			<a name="4"></a>
 			<div class="gong_head">
 				<span>服内机器展示</span>
 			</div>
@@ -109,6 +116,7 @@
 		</div>
 		<!-- 建筑展示 -->
 		<div class="show_box">
+			<a name="5"></a>
 			<div class="gong_head">
 				<span>服内建筑展示</span>
 			</div>
@@ -138,22 +146,23 @@
 			<span class="wen">
 				<div class="guanyu_bigzi">
 					<span class="guanyu_G">G</span>
-					<span class=" guanyu_name">roud Hyper Sky</span>
+					<span class="guanyu_name">roud Hyper Sky</span>
 				</div>
-				<span class="guanyu_zi">我们是于 2021 年 2 月  创建的一个集 红石 建筑 生存 于一体的红石生存服务器 ，服内有大量大型红石机器，并且我们拥有自主创新能力，我们也在励志创建一个和谐，友爱，并且无纷争的红石生电服务器</span>
+				<span class="guanyu_zi">您好,这里是GHS生电服: Ground Hyper Sky , 我们是于 2021 年 2 月  创建的一个集红石、建筑、生存于一体的红石生存服务器，服内有大量大型红石机器，并且我们拥有自主创新能力，我们也在励志创建一个和谐，友爱，并且无纷争的红石生电服务器。</span>
 			</span>
 		</div>
 		<div class="guanyu_tail"></div>	 
 		<!-- 联系我们 -->
 		<div class="lianxi">
 			<span class="lianxi_shou">联系我们</span>
+			<a name="6"></a>
 			<div class="bigbox">
 				<div class="lianxi_zhan" id="lianxi_bilibili">
-					<span class="lianxi_bilibili"></span>
+					<a class="bilibili" href="https://space.bilibili.com/476767350" target="_blank"></a>
 					<p>BiliBili</p>
 				</div>
 				<div class="lianxi_zhan" id="lianxi_QQ">
-					<span class="lianxi_QQ"></span>
+					<a class="QQ" href="http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=OyIGJCU0DAg81bZ6z3L4NJIsoZfMdFGT&authKey=jQiqwg%2FvS57m0GJwej776PLd5UdTVGEQP420xXVT3SLqsPUES353Co3bmO2or1gd&noverify=0&group_code=283504428" target="_blank"></a>
 					<p>QQ</p>
 				</div>
 			</div>
@@ -162,21 +171,24 @@
 </body>
 <style type="text/css">
  /* 字体图标声明 */
-	@font-face {
-	font-family: 'icomoon';
-	src:  url('fonts/icomoon.eot?h1stor');
-	src:  url('fonts/icomoon.eot?h1stor#iefix') format('embedded-opentype'),
-		url('fonts/icomoon.ttf?h1stor') format('truetype'),
-		url('fonts/icomoon.woff?h1stor') format('woff'),
-		url('fonts/icomoon.svg?h1stor#icomoon') format('svg');
-	font-weight: normal;
-	font-style: normal;
-	font-display: block;
+	 @font-face {
+	  font-family: 'icomoon';
+	  src:  url('fonts/icomoon.eot?blr0o7');
+	  src:  url('fonts/icomoon.eot?blr0o7#iefix') format('embedded-opentype'),
+	    url('fonts/icomoon.ttf?blr0o7') format('truetype'),
+	    url('fonts/icomoon.woff?blr0o7') format('woff'),
+	    url('fonts/icomoon.svg?blr0o7#icomoon') format('svg');
+	  font-weight: normal;
+	  font-style: normal;
+	  font-display: block;
 	}
 	.la {
 		font-family: 'icomoon';
 	}
 	#gua {
+		font-family: 'icomoon';
+	}
+	#Return{
 		font-family: 'icomoon';
 	}
 </style>
@@ -185,10 +197,11 @@
 	function language_en_us() {
 		let Eng_Switshover = document.querySelector('.english');
 		Eng_Switshover.addEventListener('click',function() {
-		window.location.replace('pages/index_english.html')
-	})}
+		window.location.replace('pages/index_english.html');
+	})};
 	language_en_us()
 </script>
 <script src="js/min.js"></script>
+<!-- <script src="js/name.js"></script> -->
 <script src="js/index.js" type="text/javascript" charset="utf-8"></script>	
 </html>				
